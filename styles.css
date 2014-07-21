@@ -1,0 +1,40 @@
+html {margin-top:45px; position:relative}
+
+.player {
+	border: 1px solid #333;
+    background-image: -webkit-linear-gradient(#3C3C3C,#111);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 45px;
+	z-index: 900;
+	overflow:hidden;
+}
+
+.player iframe {
+	width: 310px;
+	float:left;
+	margin-top: -34px;
+}
+
+.player a {
+	height: 100%;
+	width: 45px;
+	float:left;
+	border-right: 1px solid rgba(255,255,255,.1);
+	background: url(icons.png);
+	font:0/0 a;
+}
+.player a:hover {
+	background-color:rgba(0,0,0,.5);
+}
+.player a {
+	background-position: 0;
+}
+.player a + a {
+	background-position: -45px;
+}
+.player a.save {
+	background-position: 100%;
+}

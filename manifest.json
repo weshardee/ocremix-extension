@@ -1,0 +1,12 @@
+{
+   "content_scripts": [{
+      "matches": ["*://ocremix.org/remix/OCR*"],
+      "js": ["jquery-1.8.0.min.js", "jquery-ui-1.8.21.custom.min.js", "script.js"],
+      "run_at" : "document_end"
+   }],
+   "description": "Playing OCRemix songs faster",
+   "name": "wes: OCRemix player",
+   "version": "1.0",
+   "manifest_version":2,
+   "web_accessible_resources": ["styles.css", "icons.png"]
+}
